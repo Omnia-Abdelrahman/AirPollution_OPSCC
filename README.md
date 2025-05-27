@@ -13,7 +13,7 @@ The analysis includes retrospective data from 791 patients treated at the Univer
 - `code/`: R scripts for survival modeling, Cox regression, LASSO, and visualization  
 - `sas/`: SAS script for propensity score matching  
 - `poster/`: Final PDF poster summarizing the study findings  
-[View the full poster (PDF)](poster/OPSCC_AirPollution_Poster.pdf)
+[View the full poster (PDF)](OPSCC_AirPollution_Poster.pdf)
 
 
 ## Data and Methods
