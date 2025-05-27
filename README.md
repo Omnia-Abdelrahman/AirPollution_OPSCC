@@ -4,9 +4,17 @@ This repository contains the final project for the MPH practicum at Boston Unive
 
 ## Summary
 
-Oropharyngeal squamous cell carcinoma (OPSCC), particularly HPV-positive cases, generally has a favorable prognosis. However, environmental factors such as long-term air pollution exposure may influence recurrence and overall survival. This project examines the role of pollutants—specifically PM2.5, NO2, and VOCs—in modifying cancer outcomes among HPV-positive OPSCC patients.
+Oropharyngeal squamous cell carcinoma (OPSCC), particularly HPV-positive cases, generally has a favorable prognosis. However, environmental factors such as long-term air pollution exposure may influence recurrence and overall survival. This project examines the role of pollutants, specifically PM2.5, NO2, and VOCs, in modifying cancer outcomes among HPV-positive OPSCC patients.
 
 The analysis includes retrospective data from 791 patients treated at the University of Pennsylvania between 2007 and 2023. Using geocoded ZIP codes and EPA/CDC pollution datasets, the study assesses the impact of regional exposure levels on recurrence and mortality. Socioeconomic status, smoking, and comorbidities were also evaluated as modifiers of risk.
+
+## Files Included
+
+- `code/`: R scripts for survival modeling, Cox regression, LASSO, and visualization  
+- `sas/`: SAS script for propensity score matching  
+- `poster/`: Final PDF poster summarizing the study findings  
+- [Click here to view the full poster (PDF)](poster/OPSCC_AirPollution_Poster.pdf)
+
 
 ## Data and Methods
 
