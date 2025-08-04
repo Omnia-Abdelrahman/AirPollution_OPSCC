@@ -1,48 +1,52 @@
 # AirPollution_OPSCC Project
 
-This repository contains the final project for the MPH practicum at Boston University, titled **"Air Pollution and Recurrence Risk in HPV-Positive Oropharyngeal Squamous Cell Carcinoma (OPSCC)"** by Omnia Abdelrahman.
+This repository contains my MPH practicum project at Boston University titled  
+**"Air Pollution and Recurrence Risk in HPV-Positive Oropharyngeal Squamous Cell Carcinoma (OPSCC)"**.
 
-## Summary
+## Project Overview
 
-Oropharyngeal squamous cell carcinoma (OPSCC), particularly HPV-positive cases, generally has a favorable prognosis. However, environmental factors such as long-term air pollution exposure may influence recurrence and overall survival. This project examines the role of pollutants, specifically PM2.5, NO2, and VOCs, in modifying cancer outcomes among HPV-positive OPSCC patients.
+While HPV-positive OPSCC generally has favorable outcomes, this study investigates whether long-term air pollution exposure modifies recurrence and survival risks. Leveraging clinical and environmental data, I assessed the impact of PM2.5, NO₂, and VOC exposure on 791 patients treated at the University of Pennsylvania between 2007 and 2023.
 
-The analysis includes retrospective data from 791 patients treated at the University of Pennsylvania between 2007 and 2023. Using geocoded ZIP codes and EPA/CDC pollution datasets, the study assesses the impact of regional exposure levels on recurrence and mortality. Socioeconomic status, smoking, and comorbidities were also evaluated as modifiers of risk.
+## Analysis Summary
 
-## Files Included
-
-- `code/`: R scripts for survival modeling, Cox regression, LASSO, and visualization  
-- `sas/`: SAS script for propensity score matching  
-- `poster/`: Final PDF poster summarizing the study findings  
-[View the full poster (PDF)](OPSCC_AirPollution_Poster.pdf)
-
-
-## Data and Methods
-
-- **Population:** 791 HPV-positive OPSCC patients
-- **Exposure:** Long-term levels of PM2.5, NO2, and VOCs assigned via ZIP-code linkage to national pollution data
-- **Statistical Methods:**
-  - Kaplan-Meier survival analysis
-  - Cox proportional hazards models
-  - Propensity score matching and inverse probability weighting
+- **Study Design:** Retrospective cohort  
+- **Population:** 791 HPV-positive OPSCC patients  
+- **Exposure Assessment:** EPA & CDC pollution estimates (ZIP-code level)  
+- **Variables:** Included SES, smoking, comorbidities as covariates/modifiers  
+- **Key Models Used:**
+  - Cox proportional hazards
+  - Kaplan-Meier survival curves
   - LASSO regression for variable selection
-  - Spatial stratification of regional exposure
+  - Propensity score matching (SAS 9.4)
+  - Inverse probability weighting  
+  - Stratified analyses for spatial variation
 
-## Tools Used
+## Tools & Code
 
-- R: `survival`, `survminer`, `ggplot2`, `glmnet`, `corrplot`, `officer`, `flextable`
-- SAS: Propensity score estimation and adjustment
+- **R 4.3.1:** `survival`, `survminer`, `glmnet`, `ggplot2`, `corrplot`, `officer`, `flextable`  
+- **SAS 9.4:** Propensity score modeling, matching diagnostics  
+- **Output:** Clean, annotated scripts in `code/` and `sas/` folders
 
-## Files Included
+## Repository Structure
 
-- `code/`: R scripts for survival modeling, Cox regression, LASSO, and visualization
-- `sas/`: SAS script for propensity score matching
-- `poster/`: Final PDF poster summarizing the study findings
+- `code/` – R scripts for modeling and visualization  
+- `sas/` – SAS script for matching and sensitivity checks  
+- `poster/` – [View Final Poster (PDF)](OPSCC_AirPollution_Poster.pdf)
+
+## What I Learned
+
+- Applied causal inference techniques in a real-world oncology dataset  
+- Integrated clinical and environmental datasets for outcome prediction  
+- Improved data cleaning, modeling efficiency, and reporting in both R and SAS  
+- Developed reproducible workflows and publication-ready figures/tables
 
 ## Author
 
-Omnia Abdelrahman  
-BDS, MPH | Boston University
+**Omnia Abdelrahman, BDS, MPH**  
+Graduate Student in Epidemiology & Biostatistics, Boston University
 
 ## Contact
 
-For questions or collaboration inquiries, please open an issue or contact via email.
+Have questions or want to collaborate?  
+Email: [omnia@bu.edu](mailto:omnia@bu.edu)  
+Open an issue or connect with me on [LinkedIn](https://www.linkedin.com/in/omnia-abdelrahman/)
